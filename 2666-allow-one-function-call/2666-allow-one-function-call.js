@@ -3,10 +3,9 @@
  * @return {Function}
  */
 var once = function(fn) {
-    
-           let called = false;
+    let called = false;
 
-    return function(...args) {
+    return function (...args) {
         if (called) {
             return undefined;
         }
